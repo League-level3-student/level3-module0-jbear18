@@ -23,13 +23,13 @@ public class Firework{
 
 		
 		//3. Iterate through the sparks and initialize each one to a new Spark.
-		//   This is just to prevent a "Null Pointer Exception"
+		//   Make each spark start at the middle bottom of the screen.
 	
 	}
 	
 	public void launch() {
-		//4. Iterate through the sparks and initialize each one.
-		//   Make each spark start at the middle bottom of the screen.
+		//4. Iterate through the sparks and reset their x and y location
+		//   to their original starting point.
 		
 	}
 	
