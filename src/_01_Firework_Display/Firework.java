@@ -12,7 +12,6 @@ import java.util.Random;
 
 public class Firework{
 	public static final int GRAVITY = 1;
-	public static final int EXPLOSION_HEIGHT = 300;
 	
 	//1. Create an array of sparks. Don't initialize it.
 	
@@ -43,10 +42,10 @@ public class Firework{
 //			s.y += s.yVelocity;
 //			s.yVelocity += GRAVITY;
 //			
-//			if(s.y <= EXPLOSION_HEIGHT && !s.fire) {
+//			if(s.yVelocity >= 0 && !s.fire) {
 //				Random r = new Random();
 //				s.xVelocity = r.nextInt(40) - 20;
-//				s.yVelocity += r.nextInt(10) - 5;
+//				s.yVelocity += -r.nextInt(10) - 5;
 //				s.size = r.nextInt(7) + 2;
 //				s.fire = true;
 //			}

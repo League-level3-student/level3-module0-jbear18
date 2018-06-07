@@ -21,7 +21,7 @@ public class Spark {
 		this.y = y;
 		Random r = new Random();
 		color = new Color(r.nextInt(128) + 128, r.nextInt(128) + 128, r.nextInt(128) + 128);
-		yVelocity = -40;
+		yVelocity = -30;
 		xVelocity = 0;
 	}
 }
