@@ -1,4 +1,4 @@
-package _00_Simple_Array_Algorithms;
+package _01_Simple_Array_Algorithms;
 
 public class _00_1D_Array_Methods {
 	//1. Complete the method so that it returns the sum of all

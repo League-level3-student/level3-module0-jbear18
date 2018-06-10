@@ -1,4 +1,4 @@
-package _01_Firework_Display;
+package _02_Firework_Display;
 
 import java.awt.Color;
 import java.awt.Graphics;

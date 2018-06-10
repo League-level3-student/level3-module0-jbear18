@@ -1,4 +1,4 @@
-package _01_Firework_Display;
+package _02_Firework_Display;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
