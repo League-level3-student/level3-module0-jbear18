@@ -9,6 +9,8 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
+/* Run the FindHiddenButton.jar to see the finished product. */
+
 public class _02_FindTheHiddenButton implements ActionListener{
 	JFrame window;
 	JPanel panel;
@@ -28,7 +30,7 @@ public class _02_FindTheHiddenButton implements ActionListener{
 		
 		//3.  Ask the user to enter a positive number and convert it to an int
 		
-		//4. Initialize the array of JButtons to be the size of the int created in step *********
+		//4. Initialize the array of JButtons to be the size of the int created in step 3
 		
 		//5. Make a for loop to iterate through the JButton array
 			//6. initialize each JButton in the array
@@ -43,7 +45,7 @@ public class _02_FindTheHiddenButton implements ActionListener{
 		
 		//12. Give the user the instructions for the game.
 		
-		//13. initialize the hiddenButton variable to a random number less than the int created int step ******
+		//13. initialize the hiddenButton variable to a random number less than the int created in step 3
 		
 		//14. Set the text of the JButton located at hiddenButton the read "ME"
 
