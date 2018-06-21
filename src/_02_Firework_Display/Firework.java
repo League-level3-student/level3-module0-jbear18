@@ -13,7 +13,7 @@ import java.util.Random;
 public class Firework{
 	public static final int GRAVITY = 1;
 	
-	//1. Create an array of sparks. Don't initialize it.
+	//1. Create an array of Spark objects called sparks. Don't initialize it.
 	
 	public boolean dead = false;
 	
