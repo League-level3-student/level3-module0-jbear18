@@ -4,10 +4,10 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-class _00_1D_Array_Test {
+public class _00_1D_Array_Test {
 
 	@Test
-	void testSum() {
+	public void testSum() {
 		int[] arr = {0, 1, 2, 3, 4};
 		assertEquals(10, _00_1D_Array_Methods.sumIntArray(arr));
 		
@@ -16,7 +16,7 @@ class _00_1D_Array_Test {
 	}
 	
 	@Test
-	void testAverage() {
+	public void testAverage() {
 		int[] arr = {0, 1, 2, 3, 4};
 		assertEquals(2.0, _00_1D_Array_Methods.averageIntArray(arr), 0.001);
 
@@ -29,7 +29,7 @@ class _00_1D_Array_Test {
 	}
 	
 	@Test
-	void testContains() {
+	public void testContains() {
 		int[] arr = {0, 0, 0, 0, 0, 0, 0};
 		assertTrue(_00_1D_Array_Methods.containsIntValue(arr, 0));
 
@@ -41,7 +41,7 @@ class _00_1D_Array_Test {
 	}
 	
 	@Test 
-	void testGetIndex(){
+	public void testGetIndex(){
 		int[] arr = {0, 0, 0};
 		assertEquals(0, _00_1D_Array_Methods.getIndex(arr, 0));
 		
