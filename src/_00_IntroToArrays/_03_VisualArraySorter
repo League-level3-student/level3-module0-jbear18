@@ -28,7 +28,7 @@ void draw() {
 
 
   //8. draw a rectangle for each int in your array.
-  //   the x value will be the element of the int
+  //   the x value will be the index of the int
   //   the y value will the height variable
   //   the width is 1
   //   the height is negative the value of the int at that element in the array
