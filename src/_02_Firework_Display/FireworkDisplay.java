@@ -19,7 +19,7 @@ public class FireworkDisplay extends JPanel implements ActionListener {
 	
 	private JFrame window;
 	private JPanel buttonPanel;
-	private JButton squirtButton;
+	private JButton fireButton;
 	private Timer timer;
 	
 	Firework firework = new Firework();
@@ -38,12 +38,12 @@ public class FireworkDisplay extends JPanel implements ActionListener {
 		setPreferredSize(new Dimension(WIDTH, HEIGHT));
 		
 		buttonPanel = new JPanel();
-		squirtButton = new JButton("FIRE");
-		squirtButton.addActionListener((e)->{
+		fireButton = new JButton("FIRE");
+		fireButton.addActionListener((e)->{
 			fire();
 		});
 		
-		buttonPanel.add(squirtButton);
+		buttonPanel.add(fireButton);
 		window.add(buttonPanel, BorderLayout.SOUTH);
 		
 		window.pack();
@@ -54,7 +54,7 @@ public class FireworkDisplay extends JPanel implements ActionListener {
 	}
 	
 	private void fire() {
-		squirtButton.setEnabled(false);
+		fireButton.setEnabled(false);
 		firework = new Firework();
 		firework.launch();
 		timer.start();		
@@ -78,7 +78,7 @@ public class FireworkDisplay extends JPanel implements ActionListener {
 		}
 		if(reset) {
 			timer.stop();
-			squirtButton.setEnabled(true);
+			fireButton.setEnabled(true);
 		}
 	}
 }
