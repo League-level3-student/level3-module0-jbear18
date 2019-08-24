@@ -33,14 +33,20 @@ for (int i = 0; i < arrayInt.length; i++) {
 		// 9. without printing the entire array, print only the smallest number on the
 		// array
 int smallerest= Integer.MAX_VALUE;
+int largerest= Integer.MIN_VALUE;
 for (int i = 0; i < arrayInt.length; i++) {
-if(i<smallerest) {
-	System.out.println(smallerest);
-	
-}
+if(arrayInt[i]<smallerest) {
 
+	smallerest= arrayInt[i];
 }
-
+if(arrayInt[i]>largerest) {
+	largerest= arrayInt[i];
+}
+System.out.println(arrayInt[i]);
+}
+System.out.println(smallerest);
+System.out.println(largerest);
+System.out.println(arrayInt[49]);
 		// 10 print the entire array to see if step 8 was correct
 
 		// 11. print the largest number in the array.
