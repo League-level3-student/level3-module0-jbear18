@@ -15,8 +15,8 @@ public class _01_RobotRace {
 
 		// 3. use a for loop to initialize the robots.
 		for (int i = 0; i < robotArray.length; i++) {
-			robotArray[i] = new Robot();
-			robotArray[i].setX(i * 100 + 5);
+			robotArray[i] = new Robot("mini");
+			robotArray[i].setX(300);
 			robotArray[i].setY(300);
 		}
 		// 4. make each robot start at the bottom of the screen, side by side, facing up
@@ -25,21 +25,28 @@ public class _01_RobotRace {
 		// a random amount less than 50.
 		Random rand = new Random();
 		boolean isRacing = true;
-
+		for (int i = 0; i < robotArray.length; i++) {
+			robotArray[i].sparkle();
+			robotArray[i].setRandomPenColor();
+			robotArray[i].penDown();
+			robotArray[i].move(40);
+			robotArray[i].turn(10);
+		}
 		while (isRacing) {
-			for (int j = 0; j < 36; j++) {
 
-				for (int i = 0; i < robotArray.length; i++) {
-					int randy = rand.nextInt(50);
-					robotArray[i].move(70 );
+			for (int i = 0; i < robotArray.length; i++) {
+				int randy = rand.nextInt(50);
+				robotArray[i].setSpeed(10);
+				if (randy < 40) {
+					robotArray[i].move(40);
 					robotArray[i].turn(10);
-					
-					robotArray[i].setSpeed(randy);
 					robotArray[i].sparkle();
 					robotArray[i].setRandomPenColor();
 					robotArray[i].penDown();
-					if (robotArray[i].getY() <= 0) {
+					if (robotArray[i].getY() <= 300 && (robotArray[i].getX() <= 300)) {
 						isRacing = false;
+						JOptionPane.showMessageDialog(null, "Robot "+ (i+1) + " has won!!! Let's party!");
+						break;
 					}
 				}
 			}
