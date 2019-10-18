@@ -1,5 +1,6 @@
 package _03_More_Array_Fun;
 
+import java.util.ArrayList;
 import java.util.Random;
 
 public class MoreArrayFun {
@@ -17,7 +18,8 @@ System.out.println("-THIS WAS INTENTIONALLY LEFT BLANK-");
 arrayTaker(stringArray);
 System.out.println("-THIS WAS INTENTIONALLY LEFT BLANK-");
 randomArrayPrinter(stringArray);
-
+System.out.println("-THIS WAS INTENTIONALLY LEFT BLANK-");
+randomArrayPrinter(stringArray);
 	}
 	
 	
@@ -55,12 +57,19 @@ public static void everyOther(String[] stringArray) {
 	//5. Write a method that takes an array of Strings and prints all the Strings in the array
 	//   in a completely random order. Almost every run of the program should result in a different order.
 public static void randomArrayPrinter(String[] stringArray) {
-	Random rand= new Random();
-	for (int i = 0; i < stringArray.length; i++) {
-		int randy= rand.nextInt(stringArray.length);
-		System.out.println(stringArray[randy]);
 
-	}	
+	ArrayList <String> list= new ArrayList<String>();
+	for (int i = 0; i < stringArray.length; i++) {
+		list.add(stringArray[i]);
+
+
+	}
+	for (int j = 0; j < list.size(); j++) {
+		Random rand= new Random();
+		int randy= rand.nextInt(stringArray.length);
+		System.out.println(list.get(randy));
+		list.remove(randy);
+	}
 		}
 	
 }
